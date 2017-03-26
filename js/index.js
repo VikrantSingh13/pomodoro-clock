@@ -5,9 +5,27 @@ var mins = parseInt(document.getElementById('session-time').value),
     timeChanged = false,
     t;
 
-//add onBreak functionality in this function once session is over
+//todo
+//add sound files when going on break and ending break
 function minus(){
-  if(secs == 0){
+  if(secs == 0 && mins == 0){
+    if(!onBreak){
+      mins = parseInt(document.getElementById('break-time').value),
+        onBreak = true,
+        onPause = true;
+      clearTimeout(t);
+      startTimer();
+    } else {
+      mins = parseInt(document.getElementById('session-time').value),
+        onBreak = false,
+        onPause = true;
+      clearTimeout(t);
+      startTimer();      
+    }
+    //sound file will go here
+    
+  }
+  else if(secs == 0){
     secs = 59;
     mins--
   } else {
