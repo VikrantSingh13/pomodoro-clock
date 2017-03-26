@@ -22,11 +22,11 @@
   <div class="settings">
     
     <div class="break">
-      <span>-</span><input type='number' id='break-time' value='5'><span>+</span>
+      <span id="break" onClick="timerDec(this.id)">-</span><input type='number' id='break-time' value='5' readonly><span id='break' onClick="timerInc(this.id)">+</span>
     </div>
     
     <div class="session">
-      <span>-</span><input type='number' id='session-time' value='25'><span>+</span>
+      <span id='session' onClick="timerDec(this.id)">-</span><input type='number' id='session-time' value='25' readonly><span id='session' onClick="timerInc(this.id)">+</span>
     </div>
     
   </div><!-- .settings ends here -->

@@ -2,8 +2,10 @@ var mins = parseInt(document.getElementById('session-time').value),
     secs = 0,
     onBreak = false,
     onPause = true,
+    timeChanged = false,
     t;
 
+//add onBreak functionality in this function once session is over
 function minus(){
   if(secs == 0){
     secs = 59;
@@ -22,12 +24,37 @@ function timer(){
 }
 
 function startTimer(){
-  if(onPause){
+  if(timeChanged){
+    mins = parseInt(document.getElementById('session-time').value),
+    secs = 0,
+    onBreak = false,
+    onPause = true,
+    timeChanged = false;
+    
+    startTimer();
+    
+  }
+  else if(onPause){
     onPause = false;
     timer();
   } else {
     onPause = true;
     clearTimeout(t);
-  }
+  }  
+}
+
+function timerDec(str){
+  clearTimeout(t);
+  var tempTimer = document.getElementById(str + "-time").value;
+  document.getElementById(str + "-time").value = parseInt(tempTimer) - 1;
   
+  timeChanged = true;
+}
+
+function timerInc(str){
+  clearTimeout(t);
+  var tempTimer = document.getElementById(str + "-time").value;
+  document.getElementById(str + "-time").value = parseInt(tempTimer) + 1;
+  
+  timeChanged = true;
 }
