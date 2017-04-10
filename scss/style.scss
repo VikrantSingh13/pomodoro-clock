@@ -1,4 +1,29 @@
 html,  body {
   margin: 0;
   padding: 0;
+  background-color: cyan;
 }
+
+span {
+	size: 12px;
+}
+
+.container {
+	text-align: center;
+
+	.app-name {
+		p{
+			font-size: 60px;
+		}
+		
+
+	}
+
+	.settings {
+		input {
+			height: 60px;
+		}
+		
+	}
+}
+

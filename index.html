@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html >
-<head>
-  <meta charset="UTF-8">
-  <title>Pomodoro Clock for FCC</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
-</head>
-
-<body>
-  <div class="container">
-  
-  <div class="app-name">
-    <h2>Pomodoro Clock</h2>
-  </div>
-
-  <div class="timer" onClick='startTimer()'><h1 id="timer">25 : 00</h1></div>
-
-  <div class="settings">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock for FCC</title>
     
-    <div class="break">
-      <span id="break" onClick="timerDec(this.id)">-</span><input type='number' id='break-time' value='5' readonly><span id='break' onClick="timerInc(this.id)">+</span>
-    </div>
     
-    <div class="session">
-      <span id='session' onClick="timerDec(this.id)">-</span><input type='number' id='session-time' value='25' readonly><span id='session' onClick="timerInc(this.id)">+</span>
-    </div>
     
-  </div><!-- .settings ends here -->
-  
-</div> <!-- .container ends here -->
-  
+        <link rel="stylesheet" href="scss/style.scss">
+
+    
+  </head>
+
+  <body>
+    <div class="container">
+    
+      <div class="app-name">
+        <p>Pomodoro Clock</p>
+      </div>
+
+      <div class="timer" onClick='startTimer()'><h1 id="timer">25 : 00</h1></div>
+
+      <div class="settings">
+      
+        <div class="break">
+          <span id="break" onClick="timerDec(this.id)">-</span>
+          <input type='number' id='break-time' value='5' readonly>
+          <span id='break' onClick="timerInc(this.id)">+</span>
+        </div>
+        
+        <div class="session">
+          <span id='session' onClick="timerDec(this.id)">-</span>
+          <input type='number' id='session-time' value='25' readonly>
+          <span id='session' onClick="timerInc(this.id)">+</span>
+        </div>
+      
+      </div><!-- .settings ends here -->
+    
+    </div> <!-- .container ends here -->
+    
+    <!-- Scripts go here -->
     <script src="js/index.js"></script>
 
-</body>
+  </body>
 </html>
