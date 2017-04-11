@@ -2,3 +2,26 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+.container {
+  text-align: center;
+}
+.container .app-name p {
+  font-size: 60px;
+}
+.container .timer {
+  font-size: 60px;
+  cursor: pointer;
+}
+.container .settings span {
+  font-size: 36px;
+  cursor: pointer;
+}
+.container .settings input {
+  height: 36px;
+  font-size: 36px;
+  width: 10%;
+}
+.container .settings input:focus {
+  outline: none;
+}
