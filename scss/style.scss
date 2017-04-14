@@ -1,3 +1,14 @@
+//to-do list:
+/* add a simple progress bar, circular around the timer
+
+background
+
+fonts
+
+color-code break, session, inc, dec, so on..
+
+*/
+
 html,  body {
   margin: 0;
   padding: 0;
@@ -25,15 +36,10 @@ html,  body {
       font-size: 36px;
       cursor: pointer;
     }
-    input {
-      height: 36px;
-      font-size: 36px;
-      width: 10%;
-      
-    }
     
     input:focus{
       outline: none;
     }
   }
 }
+
