@@ -13,7 +13,10 @@ html, body {
 }
 
 .container {
+  height: 100vh;
   text-align: center;
+  background: cyan;
+  margin-top: 0;
 }
 .container .app-name p {
   font-size: 60px;
