@@ -10,13 +10,11 @@ color-code break, session, inc, dec, so on..
 html, body {
   margin: 0;
   padding: 0;
+  background: cyan;
 }
 
 .container {
-  height: 100vh;
   text-align: center;
-  background: cyan;
-  margin-top: 0;
 }
 .container .app-name p {
   font-size: 60px;
