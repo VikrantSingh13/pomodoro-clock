@@ -5,17 +5,22 @@ background
 
 fonts
 
-color-code break, session, inc, dec, so on..
+color-code: break, session, inc, dec, so on..
+
+fix the gap between 'timer' and 'display-bar'
 
 */
 
 //variables
 $myBackground : cyan;
+$alertColor: red; // this will be use to let the user know when on break and/or paused
+
 
 html,  body {
   margin: 0;
   padding: 0;
   background: $myBackground;
+  cursor: default;
 }
 
 .container {
@@ -29,6 +34,16 @@ html,  body {
     
   }
   
+  .display-bar{
+    font-size: 24px;
+    color: $myBackground;
+    background-color: red;
+  }
+  
+  .visible{
+    color: $alertColor;
+  }
+  
   .timer{
     font-size: 60px;
     cursor: pointer;
@@ -38,6 +53,9 @@ html,  body {
     
     span {
       font-size: 36px;
+    }
+    
+    #break, #session{
       cursor: pointer;
     }
     

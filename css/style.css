@@ -4,13 +4,16 @@ background
 
 fonts
 
-color-code break, session, inc, dec, so on..
+color-code: break, session, inc, dec, so on..
+
+fix the gap between 'timer' and 'display-bar'
 
 */
 html, body {
   margin: 0;
   padding: 0;
   background: cyan;
+  cursor: default;
 }
 
 .container {
@@ -19,12 +22,22 @@ html, body {
 .container .app-name p {
   font-size: 60px;
 }
+.container .display-bar {
+  font-size: 24px;
+  color: cyan;
+  background-color: red;
+}
+.container .visible {
+  color: red;
+}
 .container .timer {
   font-size: 60px;
   cursor: pointer;
 }
 .container .settings span {
   font-size: 36px;
+}
+.container .settings #break, .container .settings #session {
   cursor: pointer;
 }
 .container .settings input:focus {

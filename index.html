@@ -19,7 +19,8 @@
   </div>
   
   <div class="display-bar">
-  <!-- todo --> 
+    <span id="on-break">Break Time!</span>
+    <span id="paused">Paused!</span>
   </div>
 
   <div class="timer" onClick='startTimer()'><h1 id="timer">25 : 00</h1></div>
@@ -28,13 +29,13 @@
     
     <div class="break">
       <span id="break" onClick="timerDec(this.id)">-</span>
-      <span id='break-time'>5</span>
+      <span id='break-time'>1</span>
       <span id='break' onClick="timerInc(this.id)">+</span>
     </div>
     
     <div class="session">
       <span id='session' onClick="timerDec(this.id)">-</span>
-      <span id='session-time'>25</span>
+      <span id='session-time'>1</span>
       <span id='session' onClick="timerInc(this.id)">+</span>
     </div>
     
