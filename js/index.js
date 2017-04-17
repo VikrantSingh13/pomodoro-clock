@@ -5,8 +5,6 @@ var mins = parseInt(document.getElementById('session-time').innerText),
     timeChanged = false,
     t;
 
-console.log(mins, secs);
-
 //todo
 //add sound files when going on break and ending break
 function minus(){
@@ -25,7 +23,6 @@ function minus(){
       startTimer();      
     }
     //sound file will go here
-    
   }
   else if(secs == 0){
     secs = 59;
@@ -40,7 +37,7 @@ function minus(){
 }
 
 function timer(){
-  t = setTimeout(minus, 1000);
+  t = setTimeout(minus, 500);
 }
 
 function startTimer(){
