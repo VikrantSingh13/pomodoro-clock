@@ -34,6 +34,9 @@ html, body {
   font-size: 60px;
   cursor: pointer;
 }
+.container #timer {
+  margin: 0;
+}
 .container .settings span {
   font-size: 36px;
 }
