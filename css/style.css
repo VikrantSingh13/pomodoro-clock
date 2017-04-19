@@ -25,7 +25,6 @@ html, body {
 .container .display-bar {
   font-size: 24px;
   color: cyan;
-  background-color: red;
 }
 .container .visible {
   color: red;
